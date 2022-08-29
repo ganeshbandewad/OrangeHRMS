@@ -1,0 +1,21 @@
+package com.hrms.pages;
+
+import org.testng.Reporter;
+
+import com.hrms.utility.BaseClass;
+
+public class Verify_Pages extends BaseClass {
+//all verification related functions of whole apllication are in this class only
+	//Verify
+	public static void verifyTitle(String title) {
+	if(driver.getTitle().equals(title)) {
+	    Reporter.log("Title matched");    
+	}
+	else {
+	    Reporter.log("Title not matched");
+	    Reporter.log(driver.getTitle());
+	}
+	}
+	}
+
+
